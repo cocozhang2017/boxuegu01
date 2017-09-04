@@ -1,5 +1,8 @@
-define(['jquery','template','bootstrap'],function($,template){
+define(['jquery','template','util','bootstrap'],function($,template,util){
    // alert(123);
+   //设置导航菜单
+   util.setMenu(location.pathname);
+   util.qs('abb');
    $.ajax({
       type:'get',
       url:'/api/teacher',
