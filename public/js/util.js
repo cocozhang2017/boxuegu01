@@ -8,7 +8,6 @@ define(['jquery'],function($){
             //flag=123&abc=nihao;param的值
             // console.dir(location);
             var param=location.search.substring(1);
-            console.log(param);
             var result=null;
             if(param){
                var kvs=param.split('&');
