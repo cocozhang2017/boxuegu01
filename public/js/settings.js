@@ -1,4 +1,4 @@
-define(['jquery','template','util','datepicker','language','uploadify','region'],function($,template,util){
+define(['jquery','template','util','ckeditor','datepicker','language','uploadify','region'],function($,template,util,CKEDITOR){
  util.setMenu('/main/index');
  $.ajax({
   type:'get',
@@ -25,6 +25,8 @@ define(['jquery','template','util','datepicker','language','uploadify','region']
     $('#pcd').region({
         url:'/public/assets/jquery-region/region.json'
     });
+    //富文本
+    CKEDITOR.replace('editor');
   }
 
  });
