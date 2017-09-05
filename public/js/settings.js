@@ -1,4 +1,4 @@
-define(['jquery','template','util','ckeditor','datepicker','language','uploadify','region','validate','form'],function($,template,util,CKEDITOR){
+define(['jquery','template','util','ckeditor','datepicker','language','uploadify','region','validate','form','state'],function($,template,util,CKEDITOR){
  util.setMenu('/main/index');
  $.ajax({
   type:'get',

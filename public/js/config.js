@@ -9,16 +9,18 @@ require.config({
         language:'bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min',
         validate:'validate/jquery-validate.min',
         form:'jquery-form/jquery.form',
-        settings:'../js/settings',
         uploadify:'uploadify/jquery.uploadify.min',
         region:'jquery-region/jquery.region',
         ckeditor:'ckeditor/ckeditor',
+        nprogress:'nprogress/nprogress',
         common:'../js/common',
         login:'../js/login',
         index:'../js/index',
         util:'../js/util',
         teacheradd:'../js/teacher-add',
-        teacherlist:'../js/teacher-list'
+        teacherlist:'../js/teacher-list',
+        settings:'../js/settings',
+        state:'../js/state'
     },
     shim :{
        bootstrap:{

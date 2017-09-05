@@ -1,0 +1,10 @@
+define(['jquery'],function($){
+   $(document).ajaxStart({
+     $('.overlay').show();
+   });
+    $(document).ajaxStop({
+      setTimeout(function(){
+       $('.overlay').hide();
+     },200);
+    });
+});
