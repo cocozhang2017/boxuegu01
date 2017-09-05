@@ -1,4 +1,4 @@
-define(['jquery','template','util','datepicker','language','uploadify'],function($,template,util){
+define(['jquery','template','util','datepicker','language','uploadify','region'],function($,template,util){
  util.setMenu('/main/index');
  $.ajax({
   type:'get',
@@ -20,6 +20,10 @@ define(['jquery','template','util','datepicker','language','uploadify'],function
        //修改图片的url地址
        $('.preview img').attr('src',data.result.path);
       }
+    });
+    //省市县三级联动
+    $('#pcd').region({
+        url:'/public/assets/jquery-region/region.json'
     });
   }
 

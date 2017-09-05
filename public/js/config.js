@@ -11,6 +11,7 @@ require.config({
         form:'jquery-form/jquery.form',
         settings:'../js/settings',
         uploadify:'uploadify/jquery.uploadify.min',
+        region:'jquery-region/jquery.region',
         common:'../js/common',
         login:'../js/login',
         index:'../js/index',
